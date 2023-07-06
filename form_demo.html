@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1> Form demo</h1>
+        <form name ="registration" method="get" action="a.html"> <!-- method van be get or post-->
+            
+            <label for="first">First Name: </label>
+            <input type="text" name="fn" id="first"  maxlength="15" autofocus placeholder="Enter your name here"><br><br>
+
+            <label for="last">Last Name: </label>
+             <input type="text" id="last" name="ln"><br><br>
+
+             <label for="email">Email</label>
+             <input type="tel" name="email" id="email"> <br><br>
+
+             <label for="tele">Your Phone Number</label>
+             <input type="text" name="tele" id="tele"> <br><br>
+
+             <label for="url">Your Website</label>
+             <input type="text" name="url" id="url" value="http://"> <br><br>
+
+             <label for="age">Your Age:</label>
+             <input type="number" name="age" id="age" min="18" max="100" step="5"> <br><br>
+
+              <label for="exp">Your Experience:</label>
+             <input type="range" name="exp" id="exp" min="0" max="10" step="2"> <br><br>
+
+
+            <label for="pro">Province: </label>
+            <input type="text" name="pro" id="pro" value="ON"><br><br>
+
+            <label for="pass">Password </label>
+            <input type="password" name ="ln" id="pass"><br><br>
+
+
+            Type of program: <br>
+            <input type="radio" name="progtype" value="PT" id="partT" > 
+            <label for="partI">Part Time</label> <br>
+            <input type="radio" name="progtype" value="FT" id="fullT"> 
+            <label for="partI">Full-Time</label> <br>
+
+            <br>
+            <fieldset>
+
+                <legend>Hobbies:</legend> <br>
+                <input type="checkbox" name ="chk1" value="swim" id="sw" >  
+                <label for="sw">Swimming </label> <br>
+                <input type="checkbox" name ="chk2" value="read" id="rd">
+                <label for="rd">Reading </label> <br>
+                <input type="checkbox" name ="chk3" value="write" id="wr">
+                <label for="wr">Writing </label> <br>
+                <input type="checkbox" name ="chk4" value="Hiking" id="hk">
+                <label for="hr"> Hiking </label> <br>
+                <input type="checkbox" name ="chk5" value="write" id="sk"> 
+                <label for="sk"> Skating </label> <br>
+                <input type="checkbox" name ="chk6" value="Hiking" id="dc">
+                <label for="dc"> Dancing </label> <br>
+            </fieldset>
+
+            <br>
+
+            List of Cities: Select your city: <br>
+            <select name="Cities" id="">
+                <optgroup label="Ontario" multiple size="6">
+                    <option value="TRT"> Toronto</option>
+                    <option value="OTW"> Ottawa</option>
+                    <option value="SDB"> Sudbury</option>
+                </optgroup>
+                <optgroup label="Alberta">
+                    <option value="EDM"> Edmond</option>
+                    <option value="CLG"> Calgary</option>
+                </optgroup>
+                <optgroup label="BC">
+                    <option value="VNC"> Vancouver</option>
+                    <option value="WHS"> Whistler</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="cmnt"></label>
+            <textarea name="comments" id="cmnt" placeholder=" Enter the comments" cols="30" rows="10"></textarea>
+
+            <br><br><br>
+            
+
+            <input type="submit" name="btnSubmit" value ="Click here for submit">
+            <input type="reset" name="btnReset" value ="Click here for Reset">
+            <input type="image" src ="puzzle1.jpg" width="50" height="20">
+            <input type="button" name="Alert" value="Alert me">
+
+            <button>
+                <img src="cart.jpg" width="30" height="20">
+                Add to cart
+            </button>
+        </form>
+    </body>
+</html>
