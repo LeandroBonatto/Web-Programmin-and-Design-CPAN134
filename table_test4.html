@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Test 4</title>
+</head>
+<body>
+    <table border="1">
+        <h1>Nesting of table</h1>
+        <tr>
+            <th>Region</th>
+            <th>YTD Sales</th>
+        </tr>
+        <tr>
+            <th>West</th>
+            <th>1000</th>
+        </tr>
+        <tr>
+            <th>Central</th>
+            <th>
+                <table><!--inner table stars here-->
+                    <tr>
+                        <td> North</td>
+                        <td> 1000</td>
+                    </tr>
+                    <tr>
+                        <td> South</td>
+                        <td> 2000</td>
+                    </tr>
+                </table><!--inner table ends here-->
+            </th>
+        </tr>
+        <tr>
+            <th>Central</th>
+            <th>2000</th>
+        </tr>
+    </table>
+</body>
+</html>
