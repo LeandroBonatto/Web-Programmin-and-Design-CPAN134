@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey.html</title>
+</head>
+<body>
+    <fieldset>
+        <h1>Please complete our servey</h1>
+        
+            <form name ="registration" method="get" action="survey.html">
+                <table>
+                    <h2>Contact information</h2>
+                    <tr>
+                        <td><label for="email">Email address: </label></td>
+                        <td><input type="email" name="email" id=""> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="first">First name: </label></td>
+                        <td><input type="text" name="email" id="first"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="last">Last name: </label></td>
+                        <td><input type="text" name="email" id="last"> </td>
+                    </tr>
+                </table>
+                        <br>
+                <table>
+                    <h3>Geographic Information</h3>
+                    <tr>
+                        <td><label for="state">State: </label></td>
+                        <td><input type="text" name="state" id="state" placeholder="Two characters"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="first">Zip code: </label> </label></td>
+                        <td><input type="text" name="email" id="first" placeholder="Five digits"> </td>
+                    </tr>
+                    <br>
+                </table>
+                    <h3>How did you hear about us?</h3>
+                    <input type="checkbox" name ="wsearch" id="wsearch"> Web Search <br>
+                    <input type="checkbox" name ="faceb" id="faceb"> Facebook <br>
+                    <input type="checkbox" name ="twitter" id="twitter"> Twitter <br>
+                    <input type="checkbox" name="Emessage" id="Emessage"> Email message 
+            </form>
+            <h3>Thank you for taking our survey!</h3>
+            <input type="button" value="Submit">
+            <input type="button" value="Reset">
+    </fieldset>
+</body>
+</html>
