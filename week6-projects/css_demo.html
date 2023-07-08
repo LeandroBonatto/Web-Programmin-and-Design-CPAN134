@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css"><!-- external styling works-->
+            <!--embedded styling-->
+        <style>
+            /* this is how you write comments */
+            h1 {
+                /* color: red; */
+                /*red, green, blue .255 is the full color *//*rgb(255,255,255) = white */
+                /* clor: rgba(0,0,255,1) last value is for transparency */
+                color: rgb(100, 100, 0)
+            }
+            h4 {
+                background-color: aqua;
+            }
+            p {
+                /* font-size: 200%; % is relative type font-size. 100% default font size */
+                /* font-size: 16px; /*absolute*/
+                font-size: 1.5em; /* em is relative, 1em = browser's default setting (usually 16px)=100% */
+                font-size: 22pt; /*(absolute) 1pt = 1.3333px */
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: italic; /* italic and normal */
+                font-variant: small-caps;
+                font-weight: 700;
+            }
+
+            span {
+                font-weight: lighter; /* bold, normal lighter */
+            }
+
+            #i1 {
+                background-color: yellow;
+            }
+
+            #i2 {
+                background-color: aqua;
+            }
+
+            .drink {
+                color: blue;
+            }
+
+            h5, h6, div {
+                background-color: green;
+            }
+
+            i4 {
+                /* short hand property: style, weight, variant, size/lineheight, family */
+                font: italic bold 14px/200% Arial, sans-serif;
+            }
+
+            #i5 {
+                /* text-indent: 10em; */
+                text-align: center;
+                text-decoration: underline;
+                /* underline, overline line-through */
+                text-decoration-style: wavy; /* wavy,dotted, dashed, doubled */
+            }
+
+            img {
+                vertical-align: middle; /*text-top, text-botto, baseline, sub, super */
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="i1"> Css Demo</h1>
+        <h1 id="i2"> Hello</h1>
+        <h2 style="color:blue;"> Hello</h2> <!--inline styling-->
+        <h3> Good Afternoon</h3>
+
+        <h4 style="background-color: brown;">This is h4</h4>
+        <p>This is paragraph</p>
+        <p>This is para2</p>
+        <ul class="drink" id="i3">
+            <li> Tea</li>
+            <li> Coffee</li>
+            <li> Chocoalte drink</li>
+        </ul>
+        <ul>
+            <li> Swimming</li>
+            <li> Dancing</li>
+            <li> Badminton</li>
+        </ul>
+        <h5> h5</h5>
+        <h6> h6</h6>
+        <div> h7</div>
+
+        <div>This is div <span>This is span</span>
+        </div>
+
+        <p id="i4">This is para 2 for shoing short hand properety of the css fonts</p>
+
+        <section id="i5"><img src="market-car-icon.jpg" width="50" height="50">  Welcome to my class, thank you for attending it in the evening</section>
+
+        >
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </body>
+</html>
