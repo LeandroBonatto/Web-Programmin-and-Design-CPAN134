@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1> JS demo: If else</h1>
+        <p id ="p1"></p>
+        <p id="result"> Result </p>
+        <h2> Hi</h2>
+
+        <script>
+
+            var age=prompt("Enter your age");
+
+            var message;
+
+            // <,>,<=,>=,!=,==
+
+            //&&(and) both the condition has to be true
+
+            //|| (or) only 1 condition has to be true
+
+            if(age>=18)
+
+                message="You are eligible for G Driver's license";
+
+            else if  (age>=16 && age<18) 
+
+                message="You are eligible for G1 and G2 Driver's license";
+
+            else    
+
+                message="You are NOT eligible Driver's license";
+
+            
+
+            document.getElementById("result").innerHTML=message;
+
+        </script>
+
+    </body>
+</html>
