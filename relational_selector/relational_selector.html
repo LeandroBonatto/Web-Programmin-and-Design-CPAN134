@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            main li {/* select li which is descendent of main */
+                background-color: yellow;
+            }
+            main>p {/*select p which is immidiate child of main */
+                background-color: aqua;
+            }
+
+            /* main p = is the descendent = this includes immidiate parent and child + ansector and descendent relatinship 
+            main>p = p is immidiate child = this does not include ansector and descendent relationship*/
+            
+            h2+p {
+                color: red;
+            }
+
+            h2~p{
+                text-decoration: underline;
+            }
+
+
+            h1,h2,p{
+                font-style: italic;
+            }
+
+            ul.months{ /*select class months which has ul element*/
+                font-weight: bold;
+            }
+            h2,ul.months a{
+                font-size: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1> Welcome to css week 8 </h1>
+
+            <ul class="months">
+                <li>January: <a href="yahoo.com">
+                    January</a></li>
+                <li>February:<a href="google.ca">
+                    February</a></li>
+                <li>March: <a href="humber.ca">
+                    March</a></li>
+            </ul>
+            <h2>h2: Post-lecture luncheons</h2>
+
+            <p class="months">Extend the excitement by going to the luncheon</p>
+            <p>A limited number of tickets are available.</p>
+            <p><em>Contact us by phone</em> at (559) 555-1212.</p>
+        </main>  
+    </body>
+</html>
