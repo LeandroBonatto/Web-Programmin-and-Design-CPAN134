@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> Js demo </h1>
+        <p id="p1"> </p>
+        <p id="result"> </p>
+        
+        <script>
+            var myDate =new Date();//create the object of date class
+
+            document.write("<br> Date is :" +myDate);// date and time
+            document.write("<br> Date using toString :" +myDate.toDateString());//current date
+            document.write("<br> Using get full year :" +myDate.getFullYear()); //year
+            document.write("<br> Using get full month :" +(myDate.getMonth()+1)); // 0=jan,1=feb, 2=mar
+            document.write("<br> Using get date :" +myDate.getDate()); //just the date
+            document.write("<br> Using get minutes :" +myDate.getMinutes()); //Minutes
+            document.write("<br> Using get seconds :" +myDate.getSeconds()); //seconds
+            document.write("<br> Using get Hours :" +myDate.getHours()); //hours
+            document.write("<br> Using get Day :" +myDate.getDay()); //day 0=sunday ,1=monday,2=tues....
+
+        </script>
+
+    </body>
+</html>        
