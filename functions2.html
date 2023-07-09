@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> Demo: JS functions</h1>
+
+        <p id="p1"></p>
+
+        <p id="result"></p>
+
+        <button onclick="myFunctions()">Hi</button>
+        <button onclick="Multiplication(10,2)">Multiply</button>
+        <button onclick="toPrint()">Celsius</button>
+
+        <script>
+            function myFunctions(){
+                document.getElementById("p1").innerHTML="hi";
+            }
+            function Multiplication(a,b){
+                document.getElementById("result").innerHTML=a*b;
+
+            }
+            //myFunction();
+
+            //create a function which converts F to C. The formula is (5/9) * (f-32)
+
+            function toCelsius(f){
+                var c = (5/9) * (f-32);
+                return c;
+            }
+            function toPrint(){
+                document.write(toCelsius(100));
+            }
+
+
+        </script>
+
+    </body>
+</html>
