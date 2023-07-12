@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jQuery.js"></script>
+        <script type="text/javascript">
+            $("document").ready(function(){
+                //$("p").css("border","3px solid red");
+                //$("p[class=a]").css("border","3px solid red");
+                //$("p[id]").css("border","3px solid green");
+                //$("p[lang]").css("border","3px solid blue");
+                //$("p[lang^=en]").css("border","3px solid blue");
+                $("p[lang*=gb]").css("border","3px solid blue");
+                
+
+
+
+        });
+
+        </script>
+    </head>
+    <body>
+        <h1>Using Attribute Filters</h1>
+        <div id="content">
+            
+            <div id="example">
+                <p class="a">This is paragraph 1</p>
+                <p id="para1">This is paragraph 2</p>
+                <p class="b">This is paragraph 3</p>
+                <p id="para4" lang="en-us">This is paragraph 4</p>
+                <p id="para5" lang="en-gb">This is paragraph 5</p>
+            </div>
+
+        </div>
+    </body>
+</html>

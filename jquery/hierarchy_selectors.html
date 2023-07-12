@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hierarchy Selectors</title>
+
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+        // The descendant selector "ancestor descendant" selects "descendant" elements
+        // as long as they have an "ancestor" element somewhere above them
+        //$("div p").css("border","3px solid red");
+
+        // the child selector "parent > child" selects "child" elements that are immeate descendants of the "parent"
+        $("main>p").css("border","3px solid red");
+
+        //next sibling selector "prev ~ siblings" selects all "sibling
+
+        $("#para1 ~ p").css("border","3px solid green");
+        
+        //the next adjacent selector "prex + next" selects the "netx" element if it 
+    //is immediately oreceded by a "prev element"
+        $("p+span").css("background-color","pink");
+    
+    });
+    </script>
+</head>
+
+<body>   
+        <div id="example">
+            <main>
+                <p class="a">This is paragraph 1</p>            
+                <p id="para1">This is paragraph 2</p>
+                       
+                <p class="b">This is paragraph 3</p>
+                <p id="para4" lang="en-us">This is paragraph 4</p>
+                <p id="para5" lang="en-gb">This is paragraph 5</p>
+            </main>
+        </div>
+        <span> Outside div</span>
+        <p>This is p outside div tag</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            #id1{
+                width:300px;
+                height:300px;
+                border:2px solid black;
+                background-color:white;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="jQuery.js"></script>
+        <script type="text/javascript">
+        $("document").ready(function(){
+            $("#show").click(fun1);
+            $("#hide").click(fun2);
+            $("#toggle").click(fun3);
+
+        });//end of ready
+        function fun1(){
+            $("#id1").show("slow");
+        }
+        function fun2(){
+            $("#id1").hide(10000);
+        }
+        function fun3(){
+            $("#id1").toggle(5000);
+        }
+        </script>
+    </head>
+    <body>
+        <h1>event demo</h1>
+    <div id="id1" class="box"></div><br>
+
+    <button id="show" >Show</button>
+    <button id="hide" >Hide</button>
+    <button id="toggle" >Toggle</button>
+
+    </body>
+</html>
