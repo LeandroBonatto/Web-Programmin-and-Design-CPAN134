@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scarborough Zoo</title>
+    <link rel="stylesheet" href="zoocsspage.css">
+    <script src="js/validation.js"></script>
+
+</head>
+    <body>
+        <header>
+        <h1 id="welcome">Welcome to Scarborough Zoo Website</h1>
+    
+        <fieldset>
+            <legend class="note">Please Note</legend>
+            <p>The Scarborough Zoo is Closed On Monday, January 3rd, the Government of Ontario announced they were moving the province into modified Step 2 of their Re-opening Ontario Plan and implementing new measures due to the huge rise in COVID-19 cases that have been occurring and were only expected to rise in the coming weeks. <b>As a result of this announcement, we made the decision to temporarily close the Zoo and Terra Lumina effective Wednesday, January 5th, 2022.</b> We realize this may inconvenience some of our guests, however, we have made this decision as a precautionary measure to ensure the health and well-being of our animals, staff, volunteers, members and guests. <b>We now plan to reopen on February 10th, 2022. </b> Thank you for your understanding and we hope to see you soon!</p>
+        </fieldset>
+        </header>
+            <br>
+                <h2 id="visit" ><b>Visit</b></h2>
+                <a href="#">Become a member</a>&nbsp; &nbsp;
+                <a href="#">Accessibility</a> &nbsp; &nbsp;
+                <a href="#">Restaurants</a> &nbsp; &nbsp;
+                <a href="#">Transit</a> &nbsp; &nbsp;
+                <a href="#">Vaccionation Policy</a>
+            <br><br>
+            <h2 id="photopage">Check our page with photos and information of some of our animals. <a href="animalspage.html" rel="next" target="_self">Click here!</a></h2>
+            <br>
+            <h2><b> School / Events & Programs </b></h2>
+            <select name="Cities" id="">
+            <optgroup label="Scholl" multiple size="6">
+                <option value="OnP"> Onsite Programs</option>
+                <option value="VirP"> Virtual Programs</option>
+                <option value="BookV"> Book a Visit</option>
+                <option value="Res"> Resources</option>
+                <option value="gr11"> Gr. 11 Zoo Scholl</option>
+            </optgroup>
+            <optgroup label="Events & Programs">
+                <option value="eventscal"> Events Calendar</option>
+                <option value="host"> Host Your Own Event</option>
+            </optgroup>
+            </select>
+
+            <h3>Come to visit and  see some of our animals.</h3>
+            <table border="4">
+                <th colspan="3">Type of animals</th>
+                <tr>
+                    <th>Mammals</th>
+                    <th>Reptiles</th>
+                    <th>Birds</th>
+                </tr>
+                <tr>
+                    <td>Giraffe</td>
+                    <td>Crocodiles</td>
+                    <td>American Crow  </td>
+                </tr>
+                <tr>
+                    <td>Lion</td>
+                    <td>Alligators</td>
+                    <td>Mourning Dove</td>
+                </tr>
+                <tr>
+                    <td>Tiger</td>
+                    <td>Lizards</td>
+                    <td>Steller's Jay</td>
+                </tr>
+                <tr>
+                    <td>Monkey</td>
+                    <td>Snakes</td>
+                    <td>Northern Cardinal</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <h3>What types of animals do you most like?</h3>
+                <input type="checkbox" name ="mammals" id="Mammals"> Mammals <br>
+                <input type="checkbox" name ="birds" id="Birds"> Birds <br>
+                <input type="checkbox" name ="Reptiles" id="Reptiles"> Reptiles<br>
+                <input type="checkbox" name="Amphibians" id="Amphibians"> Amphibians <br>
+                <input type="checkbox" name="Fish" id="Fish"> Fish <br>
+                <input type="checkbox" name="Invertebrates" id="Invertebrates"> Invertebrates
+
+            <br>
+
+            <h2> To receive our Wildlife newsletter. Please fill in below.</h2>
+            <fieldset >
+                <legend>Member information</legend>
+                <form id="f1" name ="registration" method="get" action="scarboroughzoo.html">
+                    <table>
+                        <tr>
+                            <td><label for="email" id="t1">Email: </label></td>
+                            <td><input type="email" name="email" id="email1"  maxlength="25" autofocus placeholder="Enter your email"></td>
+                        </tr>
+                        <tr>   
+                           <td><label for="fname" id="t2">First Name: </label></td>
+                            <td><input type="text" id="fname1" name="ln"></td>
+                        </tr>
+                        <tr>   
+                            <td><label for="lname" id="t3">Last Name: </label></td>
+                             <td><input type="text" id="lname1" name="ln"></td>
+                         </tr>
+                    </table>
+                    <br>
+                    <input type="submit" name="submit" value ="Submit" id="submit" onclick="validation()">
+                </form>
+            </fieldset>
+
+            <br>
+
+            <label for="exp">Your experience in our website:</label>
+            <input type="range" name="exp" id="exp" min="0" max="10" step="2"> <br><br>
+
+            <br>
+
+            <label for="cmnt"></label>
+            <textarea name="comments" id="comments" placeholder="Let us know any questions or suggestions. Comment here." cols="40" rows="10"></textarea>
+            <br>
+            <input type="submit" name="btnSubmit" value ="Submit">
+            <input type="reset" name="btnReset" value ="Reset">
+
+
+            <h3>Connecting wildlife people since 2017</h3>
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="#"> About the Zoo</a></li>
+                <li><a href="#"> Jobs & Careers</a></li>
+                <li><a href="#"> Business Opportunities</a></li>
+            </ul>
+
+        <br>
+
+        <footer>
+            <div><b>Scarborough Zoo Ltd</b></div>
+            <div><b>2000 Meadowvale Rd</b></div>
+            <div><b>Scarborough, ON M1B 5K7</b></div>
+            <p><b>416-505-5005</b></p>
+            <p>Copyright &copy; 20222 Scarborough Zoo Ltd</p>
+        </footer>
+
+    </body>
+</html>
